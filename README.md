@@ -23,13 +23,13 @@ In production applications, authentication should be handled securely on the bac
 ## 📸 Screenshots
 
 ### Home Page
-![Home Page](Screenshots/homepage.png.png,Screenshots/homepage2.png.png)
+![Home Page](Screenshots/homepage.png.png)
 
 ### Login Page
 ![Login Page](Screenshots/login.png.png)
 
 ### Women Section
-![Women Section](Screenshots/wommen.png.png)
+![Women Section](Screenshots/womens.png.png)
 
 ### Sign-up Section
 ![Sign-up Section](Screenshots/signup.png.png)
