@@ -1,0 +1,767 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+/* NAVBAR 1 */
+#navbar {
+  width: 100%;
+  height: 35px;
+  background-color: rgb(232, 232, 232);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+#logoimg { height: 75%; }
+#navL { display: flex; gap: 15px; }
+#navL > a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 750;
+  color: black;
+}
+#n4 {
+  font-size: 24px;
+  line-height:29px;
+  font-weight: 500;
+  color: rgb(17, 17, 17);
+}
+
+/* NAVBAR 2 */
+#navbar2 {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 1000;
+}
+#logo { height: 35px; width: auto; }
+#nav2L { display: flex; gap: 20px; }
+#nav2L > a {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  font-weight: 550;
+}
+#searchL { display: flex; align-items: center; gap: 15px; }
+#box {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 200px;
+  background-color: rgb(232, 232, 232);
+  border-radius: 25px;
+  padding: 0 10px;
+}
+#box > i { font-size: 16px; color: gray; }
+#box > p { font-size: 14px; color: gray; }
+#exL { display: flex; gap: 15px; }
+#exL > i { font-size: 20px; cursor: pointer; }
+
+/* NAVBAR 3 */
+#navbar3 {
+  width: 100%;
+  height: 75px;
+  background-color: rgb(232, 232, 232);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#navbar3 > p:first-child { font-size: 16px; font-weight: 550; }
+#navbar3 > p:last-child {
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* HERO */
+#adimg1 { width: 100%; display: flex; }
+#adimg1 > img { width: 50%; object-fit: cover; }
+
+/* HERO TEXT BLOCK */
+#navbar4 {
+  width: 100%;
+  text-align: center;
+  margin: 40px 0;
+}
+#navbar4 > p:first-child {
+  font-size: 76px;
+  font-weight: 700;
+  line-height: 68px;
+}
+#navbar4 > p:last-child {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+#bshop {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  background-color: black;
+  height: 40px;
+  width: 75px;
+  border-radius: 50px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+/* FEATURED CARDS */
+#adimg2 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  color: white;
+  text-shadow: 0px 2px 6px rgba(0,0,0,0.6);
+}
+.overlay h3 { font-size: 16px; font-weight: 500; margin-bottom: 5px; }
+.overlay h2 { font-size: 22px; font-weight: 700; margin-bottom: 10px; }
+.overlay button {
+  padding: 8px 18px;
+  border-radius: 25px;
+  border: none;
+  background: white;
+  color: black;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.overlay button:hover { background: black; color: white; }
+
+/* FEATURED BANNER */
+#singimg { position: relative; }
+#singimg img { width: 100%; display: block; }
+#singimg .overlay { position: absolute; bottom: 80px; width: 100%; text-align: center; }
+#singimg .overlay h2:first-child { font-size: 60px; }
+#singimg .overlay h2:last-child { font-size: 16px; margin: 10px 0; }
+
+/* PRODUCT GRID */
+#prodC {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+#Mcard {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;
+  background: #fff;
+}
+#Mcard img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+#Mcard p { margin: 5px 0; font-size: 14px; line-height: 1.3; }
+#Mcard p:nth-child(2) { font-weight: 600; }
+#Mcard p:last-child { font-weight: 700; font-size: 15px; }
+
+/* SHOP BY ICONS */
+#M2cards { display: flex; flex-wrap: wrap; gap: 20px; padding: 20px; }
+#C2 {
+  flex: 1 1 200px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 300px;
+  background: #f5f5f5;
+}
+#C2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+#C2 .overlay {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  text-shadow: 0px 2px 6px rgba(0,0,0,0.6);
+}
+#C2 .overlay h2 { font-size: 20px; font-weight: 700; }
+
+/* SHOP BY SPORT */
+#SPcards { display: flex; flex-wrap: wrap; gap: 20px; padding: 20px 50px; }
+#C3 {
+  flex: 1 1 250px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 220px;
+  background: #f5f5f5;
+}
+#C3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+#C3 .overlay { position: absolute; bottom: 15px; left: 15px; }
+#C3 .overlay button {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  background: white;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#C3 .overlay button:hover { background: black; color: white; }
+
+/* FOOTER */
+#footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 50px 80px;
+  background: #f5f5f5;
+}
+#content {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#content h3 { font-size: 16px; font-weight: 700; margin-bottom: 10px; color: #111; }
+#content a {
+  text-decoration: none;
+  font-size: 14px;
+  color: gray;
+  transition: 0.3s;
+}
+#content a:hover { color: black; }
+
+/* FOOTER BOTTOM */
+#footer2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 80px;
+  background: #eee;
+  font-size: 14px;
+  align-items: center;
+}
+#footer2 a {
+  text-decoration: none;
+  color: gray;
+  transition: 0.3s;
+}
+#footer2 a:hover { color: black; }
+
+/* MODALS */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.65);
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease;
+}
+.modal-content {
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 16px;
+  width: 380px;
+  max-width: 90%;
+  max-height: 480px;
+  overflow-y: auto;
+  text-align: left;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.25);
+  position: relative;
+  animation: slideIn 0.3s ease;
+}
+.modal-content h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.modal-content form { display: flex; flex-direction: column; }
+.modal-content form label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+.modal-content form input {
+  height: 34px;
+  font-size: 13px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+.modal-content form input:focus {
+  outline: none;
+  border: 1px solid #111;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+.modal-content form button {
+  margin-top: 6px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  background: #111;
+  color: #fff;
+  transition: background 0.3s;
+}
+.modal-content form button:hover { background: #333; }
+.close, .login-close {
+  position: absolute;
+  top: 12px; right: 18px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #666;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.close:hover, .login-close:hover { color: #000; }
+
+/* Animations */
+@keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+@keyframes slideIn { from {transform: translateY(-30px); opacity: 0;} to {transform: translateY(0); opacity: 1;} }
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 { color: #111; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+/* .card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+} */
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.overlay {
+  padding: 10px;
+}
+
+.overlay h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.overlay p {
+  font-size: 14px;
+  font-weight: 600;
+}
+#BarS {
+  position: relative;
+  width: 175px;   
+}
+#BarS i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color:black; 
+}
+#box {
+  width: 100%;
+  padding: 8px 8px 8px 35px;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+}
+#productContainer{
+  margin-top: 30px;
+}
+/* Product Grid: 3 in a row */
+/* Product Grid: 3 in a row with responsive adjustments */
+.product-grid-nk {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Product Card Styling */
+.dynamic-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  padding: 15px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  height: 100%;
+}
+
+.dynamic-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Product Image */
+.dynamic-card img {
+  width: 100%;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.dynamic-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Product Title */
+.dynamic-card h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0 8px;
+  font-weight: 600;
+}
+
+/* Product Description */
+.dynamic-card p {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 12px;
+  min-height: 40px;
+}
+
+/* Product Tag */
+.product-tag {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 12px;
+}
+
+/* Add to Cart Button */
+.dynamic-card button {
+  background-color: #111;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.dynamic-card button:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+
+
+.page-title {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin: 30px 0 20px;
+  color: #222;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+
+/* Decorative underline */
+.page-title::after {
+  content: "";
+  display: block;
+  width: 60%;
+  margin: 8px auto 0;
+  height: 3px;
+  background: #000;
+  border-radius: 2px;
+}.add-to-cart {
+  display: inline-block;
+  padding: 12px 22px;  /* slightly bigger button */
+  margin-top: 15px;    /* extra gap above button */
+  margin-bottom: 10px; /* push it up from bottom edge */
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #444;
+}
+
+/* Shared styling for both Admin buttons */
+#loginAsAdminBtn{
+   background-color: #111;   /* Nike dark theme */
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  margin-top: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  width: 320px;
+}
+#loginAsAdminBtn:hover{
+  background-color: #555;
+  transform: scale(1.05);
+}
+#adminBtn,
+#adminLoginBtn {
+  background-color: #111;   /* Nike dark theme */
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  margin-top: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+#adminBtn:hover,
+#adminLoginBtn:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+/* General styles for the modal */
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.modal-content input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.modal-content button {
+    width: 95%;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #333;
+}
+
+.close-btn {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    text-align: center;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.modal-content button {
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #333;
+}
+/* Adjusted styles for the Login Modal */
+#loginModal .modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px 15px; /* Reduced padding */
+    border-radius: 8px;
+    width: 350px; /* Slightly narrower */
+    max-width: 90%;
+    min-height: 300px; /* Reduced height */
+    position: relative;
+}
+
+#loginModal .modal-content input {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0; /* Less vertical spacing */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#loginModal .modal-content button {
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+#loginModal .modal-content button:hover {
+    background-color: #333;
+}
+
+/* Admin Login Modal Styling */
+#adminModal .modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    max-width: 90%;
+    min-height: 200px;
+    position: relative;
+    text-align: center;
+}
+
+#adminModal .modal-content input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#adminModal .modal-content button {
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#adminModal .modal-content button:hover {
+    background-color: #333;
+}
+#signupModal .modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px 15px; /* Reduced padding */
+    border-radius: 8px;
+    width:450px; /* Slightly narrower */
+    max-width: 90%;
+    min-height: 550px; /* Reduced height */
+    position: relative;
+}
+#signupModal.modal-content input {
+    width:100%;
+    padding: 8pxpx;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
